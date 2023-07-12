@@ -9,14 +9,26 @@ update_property() {
   sed -i "s|^$property=.*$|$property=$value|" "$file"
 }
 
+# Convert file to Unix-style line endings
+dos2unix "$file_path" 2>/dev/null
+
+# Get file path from user
+read -p "Enter the file path: " file_path
+
+# Check if the file exists
+if [ ! -f "$file_path" ]; then
+  echo "File does not exist."
+  exit 1
+fi
+
 # Get user input
 read -p "Enter new value for spring.datasource.url: " datasource_url
 read -p "Enter new value for spring.datasource.username: " datasource_username
 read -p "Enter new value for spring.datasource.password: " datasource_password
 
 # Update property values
-update_property "spring.datasource.url" "$datasource_url" "your_file.txt"
-update_property "spring.datasource.username" "$datasource_username" "your_file.txt"
-update_property "spring.datasource.password" "$datasource_password" "your_file.txt"
+update_property "spring.datasource.url" "$datasource_url" "$file_path"
+update_property "spring.datasource.username" "$datasource_username" "$file_path"
+update_property "spring.datasource.password" "$datasource_password" "$file_path"
 
 echo "Values updated successfully."
