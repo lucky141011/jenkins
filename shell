@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# Function to update property value in the file
+update_property() {
+  property=$1
+  value=$2
+  file=$3
+
+  sed -i "s|^$property=.*$|$property=$value|" "$file"
+}
+
+# Get user input
+read -p "Enter new value for spring.datasource.url: " datasource_url
+read -p "Enter new value for spring.datasource.username: " datasource_username
+read -p "Enter new value for spring.datasource.password: " datasource_password
+
+# Update property values
+update_property "spring.datasource.url" "$datasource_url" "your_file.txt"
+update_property "spring.datasource.username" "$datasource_username" "your_file.txt"
+update_property "spring.datasource.password" "$datasource_password" "your_file.txt"
+
+echo "Values updated successfully."
