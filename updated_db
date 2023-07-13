@@ -1,0 +1,34 @@
+#!/bin/bash
+
+# Function to update property value in the file
+update_property() {
+  property=$1
+  value=$2
+  file=$3
+
+  sed -i "s|^$property=.*$|$property=$value|" "$file"
+}
+
+# Convert file to Unix-style line endings
+dos2unix "$file_path" 2>/dev/null
+
+# Get file path from user
+file_path="$1"
+
+# Check if the file exists
+if [ ! -f "$file_path" ]; then
+  echo "File does not exist."
+  exit 1
+fi
+
+# Get user input from command-line arguments
+jdbc_url="$2"
+username="$3"
+password="$4"
+
+# Update property values
+update_property "spring.datasource.url" "$jdbc_url" "$file_path"
+update_property "spring.datasource.username" "$username" "$file_path"
+update_property "spring.datasource.password" "$password" "$file_path"
+
+echo "Values updated successfully."
