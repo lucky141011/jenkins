@@ -1,0 +1,20 @@
+# Specify the path to the keystore file
+undertow.server.ssl.key-store=/path/to/keystore.jks
+
+# Specify the keystore password
+undertow.server.ssl.key-store-password=your_keystore_password
+
+# Specify the alias for the server certificate
+undertow.server.ssl.key-alias=server
+
+# Specify the password for the private key in the keystore
+undertow.server.ssl.key-password=your_key_password
+
+# Specify the supported TLS protocols
+undertow.server.ssl.enabled-protocols=TLSv1.2,TLSv1.3
+
+# Specify the supported cipher suites
+undertow.server.ssl.enabled-ciphers=TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256,TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+
+# Specify the minimum key size for key exchanges
+undertow.server.ssl.minimum-key-size=2048
