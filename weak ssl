@@ -18,3 +18,9 @@ undertow.server.ssl.enabled-ciphers=TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256,TLS_EC
 
 # Specify the minimum key size for key exchanges
 undertow.server.ssl.minimum-key-size=2048
+
+
+"Change the SSL/TLS server configuration to only allow strong key exchanges. Key exchanges used on the server should provide at least 112 bits of security, so the minimum key size to not flag this QID should be:
+ 2048 bit key size for Diffie Hellman (DH) or RSA key exchanges
+ 224 bit key size for Elliptic Curve Diffie Hellman (EDCH) key exchanges."
+
