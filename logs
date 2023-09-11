@@ -1,0 +1,33 @@
+javax.net.ssl|ALL|6F|XNIO-1 I/O-3|2023-09-11 15:47:11.318 EDT|SSLEngineImpl.java:631|Closing inbound of SSLEngine
+javax.net.ssl|ALL|6F|XNIO-1 I/O-3|2023-09-11 15:47:11.318 EDT|SSLEngineImpl.java:659|Closing outbound of SSLEngine
+javax.net.ssl|ALL|6F|XNIO-1 I/O-3|2023-09-11 15:47:11.570 EDT|SSLEngineImpl.java:631|Closing inbound of SSLEngine
+javax.net.ssl|ALL|6F|XNIO-1 I/O-3|2023-09-11 15:47:11.570 EDT|SSLEngineImpl.java:659|Closing outbound of SSLEngine
+javax.net.ssl|ALL|6E|XNIO-1 I/O-2|2023-09-11 15:47:16.094 EDT|SSLEngineImpl.java:631|Closing inbound of SSLEngine
+javax.net.ssl|ALL|6E|XNIO-1 I/O-2|2023-09-11 15:47:16.095 EDT|SSLEngineImpl.java:659|Closing outbound of SSLEngine
+javax.net.ssl|ALL|6E|XNIO-1 I/O-2|2023-09-11 15:47:16.583 EDT|SSLEngineImpl.java:631|Closing inbound of SSLEngine
+javax.net.ssl|ALL|6E|XNIO-1 I/O-2|2023-09-11 15:47:16.583 EDT|SSLEngineImpl.java:659|Closing outbound of SSLEngine
+
+
+javax.net.ssl|ALL|70|XNIO-1 I/O-4|2023-09-11 15:48:51.559 EDT|SSLEngineImpl.java:631|Closing inbound of SSLEngine
+javax.net.ssl|SEVERE|70|XNIO-1 I/O-4|2023-09-11 15:48:51.559 EDT|TransportContext.java:323|Fatal (INTERNAL_ERROR): closing inbound before receiving peer's close_notify (
+"throwable" : {
+  javax.net.ssl.SSLException: closing inbound before receiving peer's close_notify
+        at sun.security.ssl.Alert.createSSLException(Alert.java:133)
+        at sun.security.ssl.Alert.createSSLException(Alert.java:117)
+        at sun.security.ssl.TransportContext.fatal(TransportContext.java:318)
+        at sun.security.ssl.TransportContext.fatal(TransportContext.java:274)
+        at sun.security.ssl.TransportContext.fatal(TransportContext.java:265)
+        at sun.security.ssl.SSLEngineImpl.closeInbound(SSLEngineImpl.java:640)
+        at io.undertow.protocols.ssl.SslConduit.notifyReadClosed(SslConduit.java:636)
+        at io.undertow.protocols.ssl.SslConduit.doUnwrap(SslConduit.java:737)
+        at io.undertow.protocols.ssl.SslConduit.doHandshake(SslConduit.java:672)
+        at io.undertow.protocols.ssl.SslConduit.access$900(SslConduit.java:70)
+        at io.undertow.protocols.ssl.SslConduit$SslReadReadyHandler.readReady(SslConduit.java:1215)
+        at org.xnio.nio.NioSocketConduit.handleReady(NioSocketConduit.java:89)
+        at org.xnio.nio.WorkerThread.run(WorkerThread.java:591)}
+
+)
+javax.net.ssl|ALL|6D|XNIO-1 I/O-1|2023-09-11 15:48:56.049 EDT|SSLEngineImpl.java:631|Closing inbound of SSLEngine
+javax.net.ssl|ALL|6D|XNIO-1 I/O-1|2023-09-11 15:48:56.049 EDT|SSLEngineImpl.java:659|Closing outbound of SSLEngine
+javax.net.ssl|ALL|6F|XNIO-1 I/O-3|2023-09-11 15:48:56.639 EDT|SSLEngineImpl.java:631|Closing inbound of SSLEngine
+javax.net.ssl|ALL|6F|XNIO-1 I/O-3|2023-09-11 15:48:56.640 EDT|SSLEngineImpl.java:659|Closing outbound of SSLEngine
