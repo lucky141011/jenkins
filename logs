@@ -31,3 +31,15 @@ javax.net.ssl|ALL|6D|XNIO-1 I/O-1|2023-09-11 15:48:56.049 EDT|SSLEngineImpl.java
 javax.net.ssl|ALL|6D|XNIO-1 I/O-1|2023-09-11 15:48:56.049 EDT|SSLEngineImpl.java:659|Closing outbound of SSLEngine
 javax.net.ssl|ALL|6F|XNIO-1 I/O-3|2023-09-11 15:48:56.639 EDT|SSLEngineImpl.java:631|Closing inbound of SSLEngine
 javax.net.ssl|ALL|6F|XNIO-1 I/O-3|2023-09-11 15:48:56.640 EDT|SSLEngineImpl.java:659|Closing outbound of SSLEngine
+
+
+
+)
+javax.net.ssl|ALL|6C|XNIO-1 I/O-1|2023-09-11 22:13:44.871 EDT|SSLEngineImpl.java:659|Closing outbound of SSLEngine
+javax.net.ssl|WARNING|6C|XNIO-1 I/O-1|2023-09-11 22:13:44.871 EDT|SSLEngineOutputRecord.java:168|outbound has closed, ignore outbound application data
+javax.net.ssl|FINE|6C|XNIO-1 I/O-1|2023-09-11 22:13:44.955 EDT|Alert.java:238|Received alert message (
+"Alert": {
+  "level"      : "warning",
+  "description": "close_notify"
+}
+)
