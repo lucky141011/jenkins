@@ -43,3 +43,10 @@ javax.net.ssl|FINE|6C|XNIO-1 I/O-1|2023-09-11 22:13:44.955 EDT|Alert.java:238|Re
   "description": "close_notify"
 }
 )
+
+
+# Set the SSL/TLS-related loggers to TRACE level
+logging.level.org.xnio=TRACE
+logging.level.io.undertow=TRACE
+
+
