@@ -24,3 +24,49 @@ undertow.server.ssl.minimum-key-size=2048
  2048 bit key size for Diffie Hellman (DH) or RSA key exchanges
  224 bit key size for Elliptic Curve Diffie Hellman (EDCH) key exchanges."
 
+
+Certainly, I can help you with that. Here are detailed instructions on how to write an email to explain the implementation of mutual SSL between Apigee and Undertow APIs:
+
+Subject: Mutual SSL Implementation Between Apigee and Undertow APIs
+
+Recipient: [Recipient’s Name/Team]
+
+Opening Greeting:
+Dear [Recipient’s Name/Team],
+
+Introduction:
+I hope this email finds you well. I wanted to provide an update regarding the recent implementation of mutual SSL authentication between our Apigee gateway and the Undertow APIs. This implementation enhances the security of our communication and ensures that only authorized entities can access our services.
+
+Explanation:
+We have successfully established mutual SSL authentication, which means that both the client (Apigee) and the server (Undertow) verify each other’s digital certificates to ensure the authenticity of the connection.
+
+Details:
+
+	1.	Access Restrictions:
+	•	With the mutual authentication in place, it’s important to note that direct calls and F5 load balancer calls are no longer accessible without proper mutual authentication.
+	•	Any attempts to access these services without the required certificates will result in access being denied.
+	•	Notably, there won’t be an SSL handshake at the F5 load balancer side since the authentication process is now handled at the server side.
+	2.	F5 Load Balancer:
+	•	Our F5 load balancer acts as a pass-through to our backend servers.
+	•	It does not perform SSL termination; instead, it forwards the encrypted traffic to the backend servers.
+	•	The SSL handshake and certificate validation are now carried out at the Undertow server side.
+	3.	Certificate Configuration:
+	•	To enable mutual authentication, we’ve added the Apigee certificates to the Undertow server’s configuration.
+	•	Additionally, the certificates associated with the Undertow server have been added to the Apigee truststore to establish trust.
+
+Conclusion:
+In summary, our implementation of mutual SSL authentication ensures a higher level of security in our communication between Apigee and the Undertow APIs. Access to our services is restricted to authorized entities with the necessary certificates, and the SSL handshake is now handled at the server side, providing an added layer of protection.
+
+If you have any questions or need further clarification on any aspect of this implementation, please feel free to reach out. We are committed to maintaining the security and integrity of our systems and are here to support any inquiries you may have.
+
+Closing:
+Thank you for your attention to this important update. We look forward to continued collaboration in maintaining the security of our services.
+
+Signature:
+Best regards,
+[Your Name]
+[Your Title]
+[Your Contact Information]
+
+Please customize the email with specific recipient names and contact details as needed.
+
