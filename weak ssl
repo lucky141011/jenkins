@@ -70,3 +70,11 @@ Requesting some information regarding to failover / high availability & scalabil
 2.	How are we ensuring the service continuity maintained in the event of a failure in the primary system. 
 3.	How the system designed to minimize downtime and service disruption. 
 4.	How many nodes are currently in use within our onperm tenant.
+
+
+I kindly request information pertaining to the failover, high availability, and scalability configuration for our on-premises production environment. Please provide the following details:
+
+Can you please furnish an overview of the failover mechanism employed in our on-premises Apigee setup?
+What measures have been put in place to guarantee the continuity of services in the event of a failure within the primary system?
+How has the system been architected to minimize downtime and mitigate service disruptions?
+Could you provide information on the current number of nodes utilized within our on-premises tenant?
