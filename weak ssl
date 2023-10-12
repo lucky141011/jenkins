@@ -64,3 +64,9 @@ Thank you for your attention to this important update. We look forward to contin
 
 
 
+Requesting some information regarding to failover / high availability & scalability setup for on-perm production environment. 
+
+1.	could you please provide an overview of the failover mechanism in place for on-perm apigee setup.  
+2.	How are we ensuring the service continuity maintained in the event of a failure in the primary system. 
+3.	How the system designed to minimize downtime and service disruption. 
+4.	How many nodes are currently in use within our onperm tenant.
