@@ -49,4 +49,6 @@ javax.net.ssl|FINE|6C|XNIO-1 I/O-1|2023-09-11 22:13:44.955 EDT|Alert.java:238|Re
 logging.level.org.xnio=TRACE
 logging.level.io.undertow=TRACE
 
-
+All Fusion API's in Perf environment will be down from 11/1/2023 7 AM EST. 
+DBA team needs 7hrs approximately to complete the RAC conversion. 
+I will perform API restart once RAC conversion are completed. 
