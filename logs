@@ -52,3 +52,15 @@ logging.level.io.undertow=TRACE
 All Fusion API's in Perf environment will be down from 11/1/2023 7 AM EST. 
 DBA team needs 7hrs approximately to complete the RAC conversion. 
 I will perform API restart once RAC conversion are completed. 
+
+Dear Team,
+
+Please be informed that all Fusion APIs in the Perf environment will experience downtime starting from 11/1/2023 at 7 AM EST. The Database Administration (DBA) team estimates that approximately 7 hours will be required to complete the RAC conversion process.
+
+Following the successful completion of the RAC conversion, I will initiate the restart of the APIs.
+
+Thank you for your understanding and cooperation during this essential maintenance.
+
+Best regards,
+
+[Your Name]
