@@ -114,6 +114,7 @@ For updating key exchange and key sizes:
 
 Make sure to adjust these values according to the recommended minimums mentioned in the vulnerability scan report. Update the property file with these values and restart your application for the changes to take effect.
 
-
+openssl s_client -connect server:port -cipher "EDH" 2>/dev/null | grep -ie "Server .* key"
+Server Temp Key: DH, 1024 bits
 
 
