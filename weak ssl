@@ -78,3 +78,42 @@ Can you please furnish an overview of the failover mechanism employed in our on-
 What measures have been put in place to guarantee the continuity of services in the event of a failure within the primary system?
 How has the system been architected to minimize downtime and mitigate service disruptions?
 Could you provide information on the current number of nodes utilized within our on-premises tenant?
+
+Certainly! In your property file, look for SSL/TLS-related settings. Common properties include:
+
+1. `javax.net.ssl.keyStore`: Specifies the keystore file containing the server's private key and certificate.
+2. `javax.net.ssl.keyStorePassword`: Password to access the keystore.
+3. `javax.net.ssl.keyStoreType`: Type of keystore (e.g., JKS, PKCS12).
+4. `javax.net.ssl.trustStore`: Specifies the truststore file containing trusted certificates.
+5. `javax.net.ssl.trustStorePassword`: Password to access the truststore.
+
+For updating key exchange and key sizes:
+
+1. `jdk.tls.ephemeralDHKeySize`: Set this property to control the size of the ephemeral DH keys. For example, `jdk.tls.ephemeralDHKeySize=2048`.
+2. `jdk.tls.ephemeralRSAKeySize`: Similar to DH, but for RSA key exchange. Set it like `jdk.tls.ephemeralRSAKeySize=2048`.
+3. `jdk.tls.ephemeralEllipticCurveKeySize`: For Elliptic Curve key exchange, set it to your desired size, like `jdk.tls.ephemeralEllipticCurveKeySize=224`.
+
+Make sure to adjust these values according to the recommended minimums mentioned in the vulnerability scan report. Update the property file with these values and restart your application for the changes to take effect.
+
+
+
+
+Certainly! In your property file, look for SSL/TLS-related settings. Common properties include:
+
+1. `javax.net.ssl.keyStore`: Specifies the keystore file containing the server's private key and certificate.
+2. `javax.net.ssl.keyStorePassword`: Password to access the keystore.
+3. `javax.net.ssl.keyStoreType`: Type of keystore (e.g., JKS, PKCS12).
+4. `javax.net.ssl.trustStore`: Specifies the truststore file containing trusted certificates.
+5. `javax.net.ssl.trustStorePassword`: Password to access the truststore.
+
+For updating key exchange and key sizes:
+
+1. `jdk.tls.ephemeralDHKeySize`: Set this property to control the size of the ephemeral DH keys. For example, `jdk.tls.ephemeralDHKeySize=2048`.
+2. `jdk.tls.ephemeralRSAKeySize`: Similar to DH, but for RSA key exchange. Set it like `jdk.tls.ephemeralRSAKeySize=2048`.
+3. `jdk.tls.ephemeralEllipticCurveKeySize`: For Elliptic Curve key exchange, set it to your desired size, like `jdk.tls.ephemeralEllipticCurveKeySize=224`.
+
+Make sure to adjust these values according to the recommended minimums mentioned in the vulnerability scan report. Update the property file with these values and restart your application for the changes to take effect.
+
+
+
+
