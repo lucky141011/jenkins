@@ -118,3 +118,8 @@ openssl s_client -connect server:port -cipher "EDH" 2>/dev/null | grep -ie "Serv
 Server Temp Key: DH, 1024 bits
 
 
+
+Please find the attachment to server we raised request(REQ) for mapping Windows Service account. 
+
+Below are the unknown/Decom servers list from the spreadsheet which was shared with us. 
+
