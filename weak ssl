@@ -132,3 +132,8 @@ As part of Service ID migration could you please revert back to below questions.
 1.	Is this a mandatory step to generate New ssh keys for the service acct(srcfhpsl)
 2.	Local acct srcfhpsl ssh keys are been exchanged with other consumer applications for file transfer setup. After the migration do we have to regenerate the new ssh keys or existing ssh keys are still valid? 
 3.	When the service ID (local accts) are deleted, Does the local acct profile dir & the public and private keys are deleted from the server ? 
+
+Regarding the Service ID migration, could you kindly address the following inquiries?
+1. Is it obligatory to create new SSH keys for the service account "srcfhpsl" as part of this process?
+2. The SSH keys of the local account "srcfhpsl" are currently utilized for file transfer setup with other consumer applications. After the migration, is it necessary to regenerate new SSH keys, or will the existing ones remain valid?
+3. In the event of deleting the service ID (local accounts), will the local account profile directory, as well as the associated public and private keys, be removed from the server?
