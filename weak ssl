@@ -124,3 +124,11 @@ Please find the attachment to server we raised request(REQ) for mapping Windows 
 Below are the unknown/Decom servers list from the spreadsheet which was shared with us. 
 
 Kindly locate the attached document pertaining to the request (REQ1234) initiated for the mapping of the Windows Service account. Enclosed therein is a list of unidentified/decommissioned servers extracted from the provided spreadsheet.
+
+
+
+
+As part of Service ID migration could you please revert back to below questions. 
+1.	Is this a mandatory step to generate New ssh keys for the service acct(srcfhpsl)
+2.	Local acct srcfhpsl ssh keys are been exchanged with other consumer applications for file transfer setup. After the migration do we have to regenerate the new ssh keys or existing ssh keys are still valid? 
+3.	When the service ID (local accts) are deleted, Does the local acct profile dir & the public and private keys are deleted from the server ? 
