@@ -137,3 +137,10 @@ Regarding the Service ID migration, could you kindly address the following inqui
 1. Is it obligatory to create new SSH keys for the service account "srcfhpsl" as part of this process?
 2. The SSH keys of the local account "srcfhpsl" are currently utilized for file transfer setup with other consumer applications. After the migration, is it necessary to regenerate new SSH keys, or will the existing ones remain valid?
 3. In the event of deleting the service ID (local accounts), will the local account profile directory, as well as the associated public and private keys, be removed from the server?
+
+
+Thanks for confirming on no need to request SSH key intake form. 
+As part of initial testing, I have submitted the Centrify request for one of the sandbox server which will be less impact for now. Once we complete with our testing. I will be submitting the cerntrify request for all remaining servers. 
+
+
+
